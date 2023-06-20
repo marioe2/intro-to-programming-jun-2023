@@ -639,7 +639,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "fFNMcPI730Gy4vy9c0rEh",
+      "id": "6wm4p0nlDxqa4Rxy421xR",
       "type": "rectangle",
       "x": 423,
       "y": 771,
@@ -657,12 +657,12 @@
       "roundness": {
         "type": 3
       },
-      "seed": 1765403778,
-      "version": 32,
-      "versionNonce": 1359647902,
+      "seed": 2055448862,
+      "version": 34,
+      "versionNonce": 532512706,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1687189215318,
+      "updated": 1687189443762,
       "link": null,
       "locked": false
     },
@@ -911,6 +911,62 @@
       "containerId": null,
       "originalText": "sync fork on\nGithub.com",
       "lineHeight": 1.25
+    },
+    {
+      "id": "ynifOcQ9hbq_UbNtkXNJo",
+      "type": "rectangle",
+      "x": 428,
+      "y": 791,
+      "width": 320,
+      "height": 16,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#7950f2",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1816563394,
+      "version": 40,
+      "versionNonce": 1279276638,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1687189444864,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "fFNMcPI730Gy4vy9c0rEh",
+      "type": "rectangle",
+      "x": 416,
+      "y": 495,
+      "width": 320,
+      "height": 16,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#7950f2",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1765403778,
+      "version": 59,
+      "versionNonce": 329611486,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1687189445554,
+      "link": null,
+      "locked": false
     }
   ],
   "appState": {
