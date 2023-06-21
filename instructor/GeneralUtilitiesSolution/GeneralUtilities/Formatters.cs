@@ -6,7 +6,7 @@ namespace GeneralUtilities
     {
         public static string FormatName(string firstName, string lastName)
         {
-            return $"{firstName}, {lastName}";
+            return $"{firstName} {lastName}";
         }
     }
 }

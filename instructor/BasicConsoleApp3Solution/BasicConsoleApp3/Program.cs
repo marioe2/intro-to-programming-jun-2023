@@ -1,10 +1,10 @@
 ﻿
-
+using Display;
 
 
 
 using GeneralUtilities;
-
+Greetings.DisplayWelcome();
 Console.Write("Enter your first name: ");
 string firstName = Console.ReadLine();
 Console.Write("Enter your last name: ");
