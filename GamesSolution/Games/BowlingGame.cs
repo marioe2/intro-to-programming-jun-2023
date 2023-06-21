@@ -31,6 +31,11 @@ public class BowlingGame
     {
         return _players.Any(p => p.name.ToLowerInvariant().Trim() == name.ToLowerInvariant().Trim());
     }
+
+    internal List<Player> GetPlayers()
+    {
+        return _players;
+    }
 }
 
 public record Player(string name, int score);

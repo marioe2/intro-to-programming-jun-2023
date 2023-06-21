@@ -13,6 +13,7 @@ public class ValidatingPlayerForABlowlingGame
     }
 
     [Theory]
+    [InlineData(-1)]
     [InlineData(301)]
     public void InvalidScoresThrowAnException(int invalidScore)
     {
