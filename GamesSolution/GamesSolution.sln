@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games", "Games\Games.csproj", "{EC743B0F-AE35-4ACF-9C39-F957F3F11805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Tests", "Games.Tests\Games.Tests.csproj", "{D50097F2-1A80-44BD-8922-403B7BA21DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStuff", "CSharpStuff\CSharpStuff.csproj", "{E2348B55-19E1-40A5-8287-3EB19525E88C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC743B0F-AE35-4ACF-9C39-F957F3F11805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC743B0F-AE35-4ACF-9C39-F957F3F11805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC743B0F-AE35-4ACF-9C39-F957F3F11805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC743B0F-AE35-4ACF-9C39-F957F3F11805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D50097F2-1A80-44BD-8922-403B7BA21DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50097F2-1A80-44BD-8922-403B7BA21DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50097F2-1A80-44BD-8922-403B7BA21DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50097F2-1A80-44BD-8922-403B7BA21DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2348B55-19E1-40A5-8287-3EB19525E88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2348B55-19E1-40A5-8287-3EB19525E88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2348B55-19E1-40A5-8287-3EB19525E88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2348B55-19E1-40A5-8287-3EB19525E88C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {613C4D63-E622-4EAE-980C-A27FB776F2A2}
+	EndGlobalSection
+EndGlobal
