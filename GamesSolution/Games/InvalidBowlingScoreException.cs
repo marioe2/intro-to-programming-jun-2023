@@ -1,5 +1,13 @@
 ﻿namespace Games;
 
-public class InvalidBowlingScoreException : Exception
+public abstract class InvalidGameScoreException: ArgumentOutOfRangeException
 {
+
+}
+public class InvalidBowlingScoreException : InvalidGameScoreException
+{
+}
+
+public class InvalidGolfScoreException : InvalidGameScoreException 
+{ 
 }

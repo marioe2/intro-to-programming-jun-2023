@@ -2,7 +2,22 @@
 
 public class GameScorer
 {
+    public ScoreReport GenerateScoreReportFor(GolfGame game)
+    {
+        GuardAgainstInvalidGame(game);
 
+        var players = game.GetPlayers();
+
+        int highScore = players.Max(p => p.score);
+        int lowScore = players.Min(p => p.score);
+
+        return new ScoreReport
+        {
+            Winners = players.Where(p => p.score == lowScore).ToList(),
+            Losers = highScore == lowScore ? new() : players.Where(p => p.score == highScore).ToList(),
+            Average = players.Average(p => p.score)
+        };
+    }
     public ScoreReport GenerateScoreReportFor(BowlingGame game)
     {
         //Pre-conditions: All of the scores are in the valid ranges and there are no duplicates
@@ -24,7 +39,7 @@ public class GameScorer
         };
     }
 
-    private static void GuardAgainstInvalidGame(BowlingGame game)
+    private static void GuardAgainstInvalidGame(Game game)
     {
         if (game.GetPlayers().Count < 2)
         {
