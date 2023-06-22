@@ -1,4 +1,6 @@
-﻿namespace Banking.UnitTests.BankAccount;
+﻿using Banking.UnitTests.TestDoubles;
+
+namespace Banking.UnitTests.BankAccount;
 
 public class MakingWithdraws
 {
@@ -7,7 +9,7 @@ public class MakingWithdraws
     {
         //Given
         //If i have an account and i want to withdraw 100
-        Account account = new Account();
+        Account account = new Account(new DummyBonusCalculator());
         decimal openingBalance = account.GetBalance(); //query
         decimal amountToWithdraw = 100M;
 
@@ -21,7 +23,7 @@ public class MakingWithdraws
     [Fact]
     public void CanTakeFullBalance()
     {
-        var account = new Account();
+        var account = new Account(new DummyBonusCalculator());
         var openingBalance = account.GetBalance();
 
         account.Withdraw(openingBalance);
