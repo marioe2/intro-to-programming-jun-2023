@@ -2,11 +2,24 @@
 
 public class Account
 {
+    // This is tight coupling! We are create a NEW instance of System.Decimal
     private decimal _balance = 5000; // Fields class level variable
+    private ICanCalculateBonuses _bonusCalculator;
+
+    public Account(ICanCalculateBonuses bonusCalculator)
+    {
+        _bonusCalculator = bonusCalculator;
+    }
+
     public void Deposit(decimal amountToDeposit)
     {
-        _balance += amountToDeposit;
+        
+       decimal bonus = _bonusCalculator.CalculateBonusForDepositOn(_balance, amountToDeposit);
+
+        _balance += amountToDeposit + bonus;
     }
+
+   
 
     public decimal GetBalance()
     {
@@ -17,7 +30,7 @@ public class Account
     {
         if(amountToWithdraw > _balance)
         {
-            return;
+            throw new OverdraftException();
         }
        _balance -= amountToWithdraw;
     }

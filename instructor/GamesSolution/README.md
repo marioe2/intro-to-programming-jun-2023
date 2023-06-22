@@ -34,12 +34,13 @@ Output for this ame would be something like:
 
 ## Some Rules
 
-- Player names have to be unique.
+- X Player names have to be unique.
 - Game has to have at least two players to be scored.
 	- it's dumb to have a game with one player because they are the winner and loser.
-- Range of allowed scores:
+- X Range of allowed scores:
 	- 0 - 300 Inclusive
-- The highest score wins
-- The lowest score loses
-- Average
-- There can be ties for winners and losers.
+- X The highest score wins
+- X The lowest score loses
+- X Average
+- X There can be ties for winners and losers.
+- What if everyone has the same score?
