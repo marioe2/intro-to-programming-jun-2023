@@ -6,7 +6,7 @@ public class AccountBonusCalculations
     [Fact]
     public void DepositUsesTheBonusCalculator()
     {
-        var stubbedBonusCalculator = new Mock<StubbedBonusCalculator>();
+        var stubbedBonusCalculator = new Mock<ICanCalculateBonuses>();
 
         var account = new Account(stubbedBonusCalculator.Object);
         var openingBalance = account.GetBalance();
